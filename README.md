@@ -42,6 +42,8 @@ npm run dev-node
 
 
 ### For BE & deployment
-[render.com](https://render.com) to add `postgresSQL` and `WebService` instances for testing purpose.
+[https://dashboard.render.com](https://render.com) to add `postgresSQL` and `WebService` instances for testing purpose.
 
 [Tutorial video](https://www.youtube.com/watch?v=oqqet79lmmU) using Remult.
+
+
