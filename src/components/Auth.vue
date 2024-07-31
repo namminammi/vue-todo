@@ -7,8 +7,6 @@ const username = ref("");
 const signedIn = ref(false);
 
 async function signIn() {
-  //   console.log("session: ", remult);
-  console.log("username: ", username.value);
   const result = await fetch("/api/signIn", {
     method: "POST",
     headers: {
@@ -17,14 +15,11 @@ async function signIn() {
     body: JSON.stringify({ username: username.value }),
   });
 
-  console.log("result: ", result);
-
   if (result.ok) {
-    // console.log("REMULT USER: ", remult.user);
     remult.user = await result.json();
     signedIn.value = true;
   } else {
-    console.log(await result.text());
+    alert(await result.text());
   }
 }
 
