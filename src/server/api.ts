@@ -6,12 +6,8 @@ import { createPostgresConnection } from "remult/postgres";
 import dotenv from 'dotenv';
 dotenv.config();
 
-
 const DB_URL = process.env["DATABASE_URL"]
 
-console.log("api 🤪", DB_URL);
-
-// https://stackoverflow.com/questions/22301722/ssl-for-postgresql-connection-nodejs
 export const api = remultExpress({
   entities: [Task],
   controllers: [TaskController],

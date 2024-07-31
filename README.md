@@ -33,7 +33,9 @@ npm run build
 ```
 
 
-### Start local server
+### Start local server 
+Inside `src/server`
+
 ```sh
 npm run dev-node
 ```
